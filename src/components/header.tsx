@@ -12,7 +12,13 @@ const Header = () => {
             <Link href="/about">自己紹介</Link>
           </li>
           <li>
-            <Link href="/contact">お問い合わせ</Link>
+            <Link href="/contact">個人開発</Link>
+          </li>
+          <li>
+            <Link href="/contact">業務実績</Link>
+          </li>
+          <li>
+            <Link href="/contact">お問い合せ</Link>
           </li>
         </ul>
       </nav>

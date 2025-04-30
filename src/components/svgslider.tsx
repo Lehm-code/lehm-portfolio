@@ -15,6 +15,7 @@ const svgImages: [string, string][] = [
   ["/svg_logo/python.svg", "Python"],
   ["/svg_logo/flutter.svg", "Flutter"],
   ["/svg_logo/next-js.svg", "Next.js"],
+  ["/svg_logo/dart.svg", "Dart"],
   ["/svg_logo/html.svg", "HTML"],
   ["/svg_logo/css.svg", "CSS"],
   ["/svg_logo/tailwind-css.svg", "Tailwind CSS"],
@@ -68,7 +69,7 @@ const SvgSlider: React.FC = () => {
 
   return (
     <div className="w-full py-4">
-      <p className="text-center text-2xl">キャッチアップ</p>
+      <h2 className="text-center text-2xl">技術スタック</h2>
       <Swiper
         // svg間のスペースを設定
         spaceBetween={10}
