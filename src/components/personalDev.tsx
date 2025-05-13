@@ -53,11 +53,11 @@ const devData = [
 
 const PersonalDev = () => {
   return (
-    <div className="px-4 text-center">
-      <h2 className="text-center text-2xl mb-4">個人開発</h2>
+    <div className="px-4 text-center max-w-4xl mx-auto">
+      <h2 className="text-2xl mb-6 font-semibold">個人開発</h2>
 
-      {/* ヘッダー */}
-      <div className="grid grid-cols-[200px_1fr_1fr] font-semibold text-gray-700 mb-2 text-center">
+      {/* テーブルヘッダー */}
+      <div className="grid grid-cols-[200px_1fr_1fr] bg-gray-100 font-semibold text-gray-700 rounded-t-lg py-3 border-b">
         <div>言語 & フレームワーク</div>
         <div>ライブラリ</div>
         <div>概要</div>
@@ -67,9 +67,9 @@ const PersonalDev = () => {
       {devData.map(({ tech, logo, libs, projects }) => (
         <div
           key={tech}
-          className="grid grid-cols-[200px_1fr_1fr] gap-4 mb-6 text-left"
+          className="grid grid-cols-[200px_1fr_1fr] gap-4 items-center border-b py-4"
         >
-          <div className="flex flex-col justify-center items-center p-4 h-40">
+          <div className="flex flex-col items-center justify-center">
             <Image
               src={logo}
               alt={`技術ロゴ ${tech}`}
@@ -77,9 +77,9 @@ const PersonalDev = () => {
               height={80}
               className="object-contain mb-2"
             />
-            <p className="text-center text-sm font-medium">{tech}</p>
+            <p className="text-sm font-medium">{tech}</p>
           </div>
-          <ul className="space-y-1">
+          <ul className="space-y-1 items-center">
             {libs.map(({ label, url }, index) => (
               <li key={index}>
                 <a
@@ -93,7 +93,7 @@ const PersonalDev = () => {
               </li>
             ))}
           </ul>
-          <ul className="space-y-1">
+          <ul className="space-y-1 items-center">
             {projects.map(({ label, url }, index) => (
               <li key={index}>
                 <Link
