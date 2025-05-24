@@ -52,6 +52,16 @@ const certifications = [
       },
     ],
   },
+  {
+    tech: "GCP",
+    logo: "/svg_logo/google-cloud.svg",
+    projects: [
+      {
+        label: "Cloud Digital Leader",
+        url: "https://cloud.google.com/learn/certification/cloud-digital-leader?hl=ja",
+      },
+    ],
+  },
 ];
 
 const CertificationsList = () => {
