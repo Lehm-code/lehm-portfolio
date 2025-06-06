@@ -21,6 +21,9 @@ const Header = () => {
             <Link href="/certification">保有資格</Link>
           </li>
           <li>
+            <Link href="/techStack">技術スタック</Link>
+          </li>
+          <li>
             <Link href="/contact">お問い合せ</Link>
           </li>
         </ul>
